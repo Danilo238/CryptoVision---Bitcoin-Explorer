@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoVision - Blocchi</title>
+    <link rel="icon" href="bitcoin-img.png" type="image/png">
+    <link rel="stylesheet" href="blocks.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="page-header">
+            <a href="../dashboard/dashboard.html" class="nav-btn">← Torna alla Dashboard</a>
+            <h1>Bitcoin Blocchi Recenti</h1>
+        </header>
+
+        <main class="main-content">
+            <section class="blocks-container">
+                <h2>Ultimi Blocchi Confermati</h2>
+
+                <div class="table-wrapper">
+                    <table id="blocks-table">
+                        <thead>
+                            <tr>
+                                <th>Altezza</th>
+                                <th>Hash</th>
+                                <th>Transazioni</th>
+                                <th>Ora</th>
+                                <th>Dimensione</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Blocchi caricati dinamicamente -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="load-more">
+                    <button id="load-more-btn" class="action-btn">Carica altri blocchi</button>
+                </div>
+            </section>
+        </main>
+
+        <footer class="page-footer">
+            <p>© 2025 CryptoVision Project</p>
+        </footer>
+    </div>
+
+    <div id="spinner-overlay" class="spinner-overlay">
+        <div class="spinner"></div>
+    </div>
+
+    <script src="blocks.js"></script>
+</body>
+</html>

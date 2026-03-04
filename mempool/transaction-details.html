@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dettagli Transazione</title>
+    <link rel="icon" href="bitcoin-img.png" type="image/png">
+    <link rel="stylesheet" href="transaction-details.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="page-header">
+            <a href="mempool.html" class="nav-btn">← Torna alla Mempool</a>
+            <h1>Dettagli della Transazione</h1>
+        </header>
+
+        <main id="transaction-details" class="main-content">
+            <div id="spinner-overlay" class="spinner-overlay">
+                <div class="spinner"></div>
+            </div>
+
+            <section id="details-content" class="details-container" style="display: none;"></section>
+        </main>
+
+        <footer class="page-footer">
+            <p>© 2025 CryptoVision Project</p>
+        </footer>
+    </div>
+
+    <script src="transaction-details.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoVision - Mempool</title>
+    <link rel="icon" href="bitcoin-img.png" type="image/png">
+    <link rel="stylesheet" href="mempool.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="page-header">
+            <a href="../dashboard/dashboard.html" class="nav-btn">← Torna alla Dashboard</a>
+            <h1>Bitcoin Mempool</h1>
+        </header>
+
+        <main class="main-content">
+            <section class="mempool-container">
+                <h2>Ultime Transazioni Non Confermate</h2>
+
+                <div class="table-wrapper">
+                    <table id="mempool-table">
+                        <thead>
+                            <tr>
+                                <th>Tx ID</th>
+                                <th>Valore</th>
+                                <th>Dimensione</th>
+                                <th>Fee</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Transazioni caricate dinamicamente -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+
+        <footer class="page-footer">
+            <p>© 2025 CryptoVision Project</p>
+        </footer>
+    </div>
+
+    <div id="spinner-overlay" class="spinner-overlay">
+        <div class="spinner"></div>
+    </div>
+
+    <script src="mempool.js"></script>
+</body>
+</html>

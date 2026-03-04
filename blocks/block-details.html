@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CryptoVision - Dettagli Blocco</title>
+    <link rel="icon" href="../blocks/bitcoin-img.png" type="image/png" />
+    <link rel="stylesheet" href="block-details.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <header class="page-header">
+            <a href="../blocks/blocks.html" class="nav-btn">← Torna ai Blocchi</a>
+            <h1>Dettagli Blocco</h1>
+        </header>
+
+        <main class="main-content">
+            <!-- informazioni generali del blocco -->
+            <section class="block-info">
+                <h2>Informazioni Generali</h2>
+                <div id="block-info" class="info-grid">
+                    <!-- Qui il JS inietta le card / righe con le proprietà del blocco -->
+                </div>
+            </section>
+
+            <!-- transazioni con paginazione -->
+            <section class="tx-section">
+                <h2>Transazioni Contenute <span id="tx-count"></span></h2>
+
+                <ul id="tx-list" class="tx-list">
+                    <!-- lista delle transazioni (inserita dal JS) -->
+                </ul>
+
+                <div class="load-more-wrap">
+                    <button id="load-more-txs" class="action-btn" style="display:none;">Carica altre transazioni</button>
+                </div>
+            </section>
+        </main>
+
+        <footer class="page-footer">
+            <p>© 2025 CryptoVision Project</p>
+        </footer>
+    </div>
+
+    <!-- spinner global -->
+    <div id="spinner-overlay" class="spinner-overlay">
+        <div class="spinner"></div>
+    </div>
+
+    <script src="block-details.js"></script>
+</body>
+</html>
