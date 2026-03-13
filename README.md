@@ -274,7 +274,7 @@ cd CryptoVision---Bitcoin-Explorer
 python3 -m http.server 8000
 ```
 
-Aprire infine: http://localhost:80C00/dashboard/dashboard.html
+Aprire infine: http://localhost:8000/dashboard/dashboard.html
 
 Non è richiesto alcun backend.
 
